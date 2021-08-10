@@ -1,1 +1,10 @@
+@font-face {
+  font-family: "UTM BryantLG";
+  src: url("../assets/fonts/utm_bryantlg.ttf");
+}
+.container {
+  font-family: "UTM BryantLG";
+  font-size: 14px;
+  @import "header";
+}
 
