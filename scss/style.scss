@@ -1,9 +1,10 @@
+@import "variable";
 @font-face {
-  font-family: "UTM BryantLG";
+  font-family: $utm_bryantlg;
   src: url("../assets/fonts/utm_bryantlg.ttf");
 }
 .container {
-  font-family: "UTM BryantLG";
+  font-family: $utm_bryantlg;
   font-size: 14px;
   @import "header";
 }
