@@ -10,25 +10,24 @@
     }
   }
 
-  .menu ul li {
-    padding: 0 20px;
+  .nav-item {
+    padding: 0 15px;
     text-transform: uppercase;
+
+    .nav-link {
+      font-size: 14px;
+      color: $text_navbar_color;
+      font-weight: bold;
+    }
   }
 
-  .menu ul li a {
-    font-size: 14px;
-    color: $text_navbar_color;
-    font-weight: bold;
-  }
-
-  .menu ul li:hover {
+  .nav-item:hover {
     background: $color_hover;
     border-radius: 17px;
-    color: white;
-  }
 
-  .menu ul li a:hover {
-    color: white;
+    .nav-link {
+      color: white;
+    }
   }
 }
 
@@ -58,6 +57,7 @@
     }
   }
 }
+
 @media all and (max-width: 767px){
   .header-menu {
     height: 65px;
@@ -70,24 +70,25 @@
     .navbar-brand {
       width: 150px;
       margin: 0 auto;
+
       img {
         width: 100%;
       }
     }
 
-    .menu ul li {
+    .nav-item {
       font-weight: bold;
       font-size: 16px;
       line-height: 22px;
       text-transform: uppercase;
+    }
 
-      &:hover {
-        background: none;
-        border-radius: 0;
+    .nav-item:hover {
+      background: none;
+      border-radius: 0;
 
-        a {
-          color: $color_hover;
-        }
+      .nav-link {
+        color: $color_hover;
       }
     }
   }
