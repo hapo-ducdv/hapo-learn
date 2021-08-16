@@ -2,10 +2,12 @@ $background_color_header: #fefbfb;
 $text_navbar_color: #505353;
 $color_hover: #B2D235;
 $open_sans: "Open Sans";
-$utm_bryantlg: "UTM BryantLG";
+$color_banner1_heading: #11114E;
+$color_banner1_desc: #505353;
+
 
 @font-face {
-  font-family: $utm_bryantlg;
   src: url("../assets/fonts/utm_bryantlg.ttf");
+  font-family: "UTM_BryantLG";
   font-size: 14px;
 }
