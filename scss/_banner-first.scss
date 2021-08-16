@@ -1,132 +1,182 @@
 .banner-first {
-  height: 655px;
-  left: 0px;
-  top: 150px;
+  height: 625px;
   background-image: url("../assets/images/hapo_learn_banner1.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 
-  .banner-first-heading {
-    position: absolute;
-    width: 513px;
-    height: 61px;
-    left: 50px;
-    top: 270px;
-    font-size: 48px;
-    line-height: 61px;
-    letter-spacing: -0.05em;
-    color: $color_banner1_heading;
-  }
+  &-content {
+    margin-left: 36px;
 
-  .banner-first-desc {
-    position: absolute;
-    width: 249px;
-    height: 50px;
-    left: 50px;
-    top: 400px;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: -0.05em;
-    color: $color_banner1_desc;
-  }
+    &-heading {
+      height: 55px;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: -0.05em;
+      color: $color_banner1_heading;
+    }
 
-  .banner-first-button {
-    position: absolute;
-    width: 350px;
-    padding: 10px;
-    left: 50px;
-    top: 470px;
-    background: $color_hover;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    text-align: center;
+    &-bold {
+      height: 55px;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: -0.05em;
+      color: $color_banner1_heading;
+    }
+
+    &-bold img {
+      height: 48px;
+      width: 55px;
+    }
+
+    &-desc-up {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.05em;
+      color: $color_banner1_desc;
+    }
+
+    &-desc-bot {
+      margin-bottom: 26px;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.05em;
+      color: $color_banner1_desc;
+    }
+
+    .btn {
+      width: 377px;
+      background: $color_hover;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 35px;
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
   }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px){
   .banner-first {
-    height: 460px;
+    width: 100%;
+    height: 420px;
 
-    .banner-first-heading {
-      width: 308px;
-      position: absolute;
-      top: 200px;
-      left: 26px;
-      font-size: 30px;
-      line-height: 37px;
-      letter-spacing: -0.05em;
-      color: $color_banner1_heading;
-    }
+    &-content {
+      margin-left: 23px;
 
-    .banner-first-desc {
-      width: 200px;
-      position: absolute;
-      top: 290px;
-      left: 26px;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: -0.05em;
-      color: $color_banner1_desc;
-    }
+      &-heading {
+        height: 35px;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_heading;
+      }
 
-    .banner-first-button {
-      width: 200px;
-      position: absolute;
-      top: 350px;
-      left: 26px;
-      font-size: 16px;
-      color: white;
-      background: $color_hover;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 35px;
+      &-bold {
+        height: 35px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_heading;
+      }
+
+      &-bold img {
+        height: 23px;
+        width: 25px;
+      }
+
+      &-desc-up {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_desc;
+      }
+
+      &-desc-bot {
+        margin-bottom: 29px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_desc;
+      }
+
+      .btn {
+        width: 200px;
+        background: $color_hover;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 35px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+      }
     }
   }
 }
+
 @media all and (max-width: 767px){
   .banner-first {
+    height: 220px;
+    width: 100%;
+    display: block !important;
 
-    .banner-first-heading {
-      position: absolute;
-      width: 257px;
-      height: 31px;
-      left: 59px;
-      top: 290px;
-      font-size: 25px;
-      line-height: 31px;
-      letter-spacing: -0.05em;
-      color: $color_banner1_heading;
+    &-content {
+      padding-top: 220px !important;
+      margin-left: 60px;
 
-      img {
-        width: 28px;
+      &-heading {
+        margin-top: 6px;
+        height: 35px;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_heading;
       }
-    }
 
-    .banner-first-desc {
-      position: absolute;
-      width: 200px;
-      height: 40px;
-      left: 59px;
-      top: 360px;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: -0.05em;
-      color: $color_banner1_desc;
-    }
+      &-bold {
+        height: 35px;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_heading;
+      }
 
-    .banner-first-button {
-      position: absolute;
-      width: 250px;
-      height: 46.42px;
-      left: 59px;
-      top: 407px;
-      font-size: 18px;
-      color: white;
-      background: $color_hover;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 35px;
+      &-bold img {
+        height: 23px;
+        width: 25px;
+      }
+
+      &-desc-up {
+        margin-top: 14px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_desc;
+      }
+
+      &-desc-bot {
+        margin-bottom: 19px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.05em;
+        color: $color_banner1_desc;
+      }
+
+      .btn {
+        width: 250px;
+        background: $color_hover;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 35px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+      }
     }
   }
 }
