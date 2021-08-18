@@ -2,7 +2,7 @@
   margin-top: 50px;
 
   .card {
-    background-color: white;
+    background-color: $cl-while;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 
@@ -38,7 +38,6 @@
     border-radius: 15px 15px 0px 0px;
 
     img {
-      display: block;
       width: 60%;
     }
   }
@@ -54,7 +53,7 @@
       letter-spacing: -0.05em;
     }
 
-    .card-text{
+    .card-text {
       font-weight: bold;
       font-size: 14px;
       line-height: 20px;
@@ -67,11 +66,11 @@
       width: 200px;
       font-weight: bold;
       font-size: 18px;
-      color: white;
+      color: $cl-while;
       background: $color_hover;
       box-shadow: inset 0px 1.5px 2px #6F8710;
       border-radius: 22px;
-      border: 0.3px solid white;
+      border: 0.3px solid $cl-while;
     }
   }
 
@@ -99,19 +98,10 @@
 @media all and (min-width: 768px) and (max-width: 1024px){
   .courses {
     .card-img-top {
-      width: 100%;
       height: 121px;
-
-      img {
-        display: block;
-        width: 60%;
-      }
     }
 
     .card-body {
-      text-align: center;
-      align-items: center;
-
       .card-title {
         font-size: 18px;
         line-height: 25px;
@@ -149,13 +139,7 @@
     margin-top: 230px;
 
     .card-img-top {
-      width: 100%;
       height: 163px;
-
-      img {
-        display: block;
-        height: 60%;
-      }
     }
 
     .card-body {
