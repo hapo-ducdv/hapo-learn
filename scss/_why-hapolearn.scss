@@ -1,0 +1,147 @@
+.why-hapolearn {
+  margin-top: 55px;
+  height: 740px;
+  background-image: url("../assets/images/bg-black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &-text {
+    margin-top: 300px;
+    color: $cl-while;
+    text-align: center;
+
+    h3 {
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 86px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      margin-left: 30px;
+    }
+
+    .text-content {
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.05em;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  i {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 7px;
+    align-items: center;
+  }
+
+  .multi-device-img {
+    width: 780px;
+    margin-left: -50px;
+    margin-top: 55px;
+  }
+
+  .mb-img {
+    position: absolute;
+    background-image: url("../assets/images/mb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 425px;
+    height: 603px;
+    top: -230px;
+    left: -5px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+  .why-hapolearn {
+    margin-top: 80px;
+    height: 395px;
+
+    &-text {
+      h3 {
+        width: 700px;
+        font-size: 50px;
+        line-height: 61px;
+        margin-left: 90px;
+        margin-top: -260px;
+      }
+
+      .text-content {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 7px;
+        margin-top: 8px;
+      }
+    }
+
+    i {
+      font-size: 17px;
+      line-height: 20px;
+      letter-spacing: 5px;
+    }
+
+    .multi-device-img {
+      width: 378px;
+
+      img {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 55px;
+      }
+    }
+
+    .mb-img {
+      width: 250px;
+      height: 428px;
+      top: -150px;
+    }
+  }
+}
+
+@media all and (max-width: 767px){
+  .why-hapolearn {
+    margin-top: 80px;
+    height: 550px;
+
+    &-text {
+      h3 {
+        text-align: left;
+        width: 300px;
+        font-size: 40px;
+        line-height: 40px;
+        margin-left: 150px;
+        margin-top: -270px;
+      }
+
+      .text-content {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 6px;
+        margin-top: 10px;
+      }
+    }
+
+    i {
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    .multi-device-img {
+      margin: 0 auto;
+      width: 316px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .mb-img {
+      width: 225px;
+      top: -130px;
+    }
+  }
+}
