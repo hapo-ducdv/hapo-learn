@@ -45,11 +45,7 @@
 
   .mb-img {
     position: absolute;
-    background-image: url("../assets/images/mb.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 425px;
-    height: 603px;
     top: -230px;
     left: -5px;
   }
@@ -66,7 +62,7 @@
         font-size: 50px;
         line-height: 61px;
         margin-left: 90px;
-        margin-top: -260px;
+        margin-top: -270px;
       }
 
       .text-content {
@@ -95,8 +91,11 @@
 
     .mb-img {
       width: 250px;
-      height: 428px;
       top: -150px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -142,6 +141,10 @@
     .mb-img {
       width: 225px;
       top: -130px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
