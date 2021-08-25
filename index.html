@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#">All Sources</a>
                 </li>
                 <li class="nav-item text-center">
-                    <a class="nav-link" href="#">Login/Register</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginRegister">Login/Register</a>
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link" href="#">Profile</a>
@@ -313,6 +313,90 @@
     <div class="d-flex justify-content-center align-items-center copyright">
         <div class="copyright-text">
             <i class="far fa-copyright"></i> 2020 HapoLearn, Inc. All rights reserved.
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-register" id="modalLoginRegister" tabindex="-1" aria-labelledby="modalLoginRegisterLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content-cus">
+            <div class="modal-title" id="modalLoginRegisterLabel">
+                <ul class="nav nav-tabs w-100">
+                    <li class="nav-item w-50">
+                        <a class="d-flex justify-content-center align-items-center nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item w-50">
+                        <a class="d-flex justify-content-center align-items-center nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <button type="button" class="tab-close rounded-circle" data-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label" for="username">Username:</label>
+                                <input type="email" class="form-control" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="pwd">Password:</label>
+                                <input type="password" class="form-control login-pass" id="pwd">
+                            </div>
+                            <div class="form-group w-100 form-check d-flex align-items-center">
+                                <div class="w-50">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <p class="form-check-label" for="exampleCheck1">Check me out</p>
+                                </div>
+                                <a href="#" class="w-50 text-right forgot-pwd"><u>Forgot password</u></a>
+                            </div>
+                            <div class="d-flex justify-content-center btn-cover">
+                                <button type="submit" class="btn text-uppercase">login</button>
+                            </div>
+                            <div class="d-flex align-items-center login-with">
+                                <div class="horizontal-line"><hr></div>
+                                <div class="text-center text">Login with</div>
+                                <div class="horizontal-line"><hr></div>
+                            </div>
+                            <div class="login-account d-flex flex-column align-items-center">
+                                <a href="#" class="btn d-flex justify-content-center align-items-center login-account-google">
+                                    <i class="fab fa-google-plus-g"></i> Google
+                                </a>
+                                <a href="#" class="btn d-flex justify-content-center align-items-center login-account-facebook">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label" for="rUsername">Username:</label>
+                                <input type="email" class="form-control" id="rUsername">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="rEmail">Email:</label>
+                                <input type="email" class="form-control" id="rEmail">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="rPwd">Password:</label>
+                                <input type="password" class="form-control" id="rPwd">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="rRepeatPwd">Repeat password:</label>
+                                <input type="password" class="form-control" id="rRepeatPwd">
+                            </div>
+                            <div class="d-flex justify-content-center btn-cover btn-register">
+                                <button type="submit" class="btn text-uppercase">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
