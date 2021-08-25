@@ -1,0 +1,163 @@
+.login-register {
+  color: $text_navbar_color;
+
+  .modal-title {
+    border: 1px solid $color_card-title;
+
+    .tab-close {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      background: $color_card-title;
+      border: 0;
+      top: -13px;
+      right: -13px;
+    }
+
+    .fa-times {
+      font-size: 28px;
+      color: $cl-while;
+    }
+  }
+
+  .nav-item {
+    background: $cl-while;
+  }
+
+  .nav-item .active{
+    background: $color_card-title;
+    color: $cl-while;
+  }
+
+  .nav-link {
+    height: 70px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    color: $color_card-title;
+  }
+
+  .tab-content {
+    margin-top: 30px;
+
+    label {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .form-check-input {
+      margin-top: 2px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .form-check-label {
+      margin-left: 7px;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .form-control {
+      height: 60px;
+      margin-bottom: 30px;
+      background-color: #F2F2F2;
+    }
+
+    .ipt-pwd {
+      margin-bottom: 10px;
+    }
+
+    .forgot-pwd {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: $color_card-title;
+    }
+
+    .btn-register {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .login-with {
+    margin-top: 15px;
+
+    .horizontal-line {
+      width: 180px;
+    }
+
+    .text {
+      padding: 4px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .btn-cover {
+    width: 200px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 45px;
+    background: $color_card-title;
+    box-shadow: inset 0px 1.5px 2px $cl-box-shadow;
+    border-radius: 22px;
+
+    .btn {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: $cl-while;
+    }
+  }
+
+  .login-account {
+    .btn {
+      width: 370px;
+      height: 55px;
+      color: $cl-while;
+      font-size: 20px;
+    }
+
+    .fab {
+      font-size: 27px;
+      margin-right: 10px;
+    }
+
+    &-google {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      background: $cl-bg-google;
+    }
+
+    &-facebook {
+      margin-bottom: 45px;
+      background: $cl-bg-fb;
+    }
+  }
+}
+
+@media all and (max-width: 767px){
+  .modal-content-cus {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .login-with {
+      .horizontal-line {
+        width: 155px;
+      }
+    }
+  }
+}
