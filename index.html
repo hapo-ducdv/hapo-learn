@@ -5,26 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Trang chủ</title>
+    <link rel="shortcut icon" href="assets/images/hapo_learn.png" type="image/png" />
 </head>
 <body>
-<div class="container">
+<div class="container header">
     <nav class="navbar navbar-expand-md navbar-light header-menu">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"><img src="assets/images/hapo_learn.png" alt="hapo learn"></a>
-
         <div class="collapse navbar-collapse justify-content-end menu" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
-                <li class="nav-item text-center">
+                <li class="nav-item text-center nav-home active">
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link" href="#">All Sources</a>
+                </li>
+                <li class="nav-item text-center nav-item-hidden">
+                    <a class="nav-link" href="#">List lesson</a>
+                </li>
+                <li class="nav-item text-center nav-item-hidden">
+                    <a class="nav-link" href="#">Lesson Details</a>
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginRegister">Login/Register</a>
@@ -45,8 +53,12 @@
         </div>
         <div class="banner-first-content-desc-up d-block">Interface lessons, "on-the-go" practice,</div>
         <div class="banner-first-content-desc-bot d-block">peer support</div>
-        <a class="btn algin-middle" href="#">Start Learning Now !</a>
+        <a class="btn d-flex align-items-center justify-content-center" href="#">Start Learning Now !</a>
     </div>
+</div>
+
+<div class="linear-gradient">
+    <div class="transition-block"></div>
 </div>
 
 <div class="courses container">
@@ -59,7 +71,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Html/Css/js Tutorial</h5>
                     <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                    <a href="#" class="btn justify-content-center">Take This Course</a>
+                    <a href="#" class="btn">Take This Course</a>
                 </div>
             </div>
         </div>
@@ -173,7 +185,7 @@
         <p>What other students turned professionals have to say about us after learning with us and reaching their goals</p>
     </div>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner feedback-slide">
             <div class="carousel-item active">
                 <div class="feedback-border">
                     <div class="feedback-border-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</div>
@@ -231,13 +243,28 @@
                     </div>
                 </div>
             </div>
+            <div class="carousel-item">
+                <div class="feedback-border">
+                    <div class="feedback-border-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</div>
+                </div>
+                <div class="feedback-info d-flex">
+                    <img src="assets/images/avatar.png" class="rounded-circle feedback-info-img" alt="Avatar">
+                    <div class="card-body">
+                        <div class="feedback-info-title">Hoang Anh Nguyen</div>
+                        <div class="feedback-info-subtitle">Java</div>
+                        <div class="feedback-info-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <i class="far fa-chevron-circle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <i class="far fa-chevron-circle-right"></i>
-        </a>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><i class="far fa-chevron-circle-left"></i></a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><i class="far fa-chevron-circle-right"></i></a>
     </div>
 </div>
 
@@ -269,7 +296,7 @@
 <div class="footer">
     <div class="container-fluid">
         <div class="row footer-on">
-            <div class="col-md-4 col-7 d-flex flex-column justify-content-center footer-logo">
+            <div class="col-md-4 col-7 d-flex flex-column align-items-center justify-content-center footer-logo">
                 <a href="#" class="footer-logo-img">
                     <img src="assets/images/hapo_learn_white1.png" alt="hapo learn">
                 </a>
@@ -288,20 +315,20 @@
                     <a class="nav-link" href="#">FAQ</a>
                 </nav>
             </div>
-            <div class="col-md-4 col-5 d-flex align-items-center justify-content-center footer-contact">
-                <a data-toggle="collapse" href="#collapseFacebook" role="button" aria-expanded="false" aria-controls="collapseFacebook">
+            <div class="col-md-4 col-5 d-flex align-items-center justify-content-center contact">
+                <a data-toggle="collapse" href="#collapseFacebook" role="button" aria-expanded="false" aria-controls="collapseFacebook" class="d-flex align-items-center justify-content-center footer-contact">
                     <i class="fab fa-facebook-f footer-contact-icon"></i>
                 </a>
                 <div class="collapse" id="collapseFacebook">
                     <div class="">facebook.com/tuyen.dung.haposoft</div>
                 </div>
-                <a data-toggle="collapse" href="#collapseCall" role="button" aria-expanded="false" aria-controls="collapseCall">
+                <a data-toggle="collapse" href="#collapseCall" role="button" aria-expanded="false" aria-controls="collapseCall" class="d-flex align-items-center justify-content-center footer-contact">
                     <i class="fas fa-phone-alt footer-contact-icon"></i>
                 </a>
                 <div class="collapse" id="collapseCall">
                     <div class="">+84-85-645-9898</div>
                 </div>
-                <a data-toggle="collapse" href="#collapseMail" role="button" aria-expanded="false" aria-controls="collapseMail">
+                <a data-toggle="collapse" href="#collapseMail" role="button" aria-expanded="false" aria-controls="collapseMail" class="d-flex align-items-center justify-content-center footer-contact">
                     <i class="fas fa-envelope footer-contact-icon"></i>
                 </a>
                 <div class="collapse" id="collapseMail">
@@ -404,6 +431,10 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>

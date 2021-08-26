@@ -1,22 +1,26 @@
 .footer {
+  font-family: "UTM_BryantLG";
   margin-top: 50px;
   color: $cl-while;
   background: $text_navbar_color;
 
   &-on {
-    padding: 30px 120px;
+    padding: 35px 15px;
   }
 
   &-logo {
+    margin-top: -106px;
+
     .footer-logo-img {
       width: 290px;
+
       img{
         width: 100%;
       }
     }
 
     .footer-logo-text {
-      margin-left: 68px;
+      margin-left: 88px;
       width: 249px;
       font-size: 20px;
       line-height: 25px;
@@ -44,13 +48,23 @@
 
   }
 
+  a {
+    text-decoration: none;
+  }
+
   &-contact {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+    background: $cl-while;
+    border: 0.5px solid $cl-while;
+    box-sizing: border-box;
+    border-radius: 50%;
+
     &-icon {
-      color: $cl-while;
-      font-size: 30px;
-      border-radius: 50%;
-      margin-right: 17px;
-      margin-left: 17px;
+      color: $text_navbar_color;
+      font-size: 25px;
     }
   }
 
@@ -68,7 +82,7 @@
 @media all and (min-width: 768px) and (max-width: 1024px){
   .footer {
     &-on {
-      padding: 20px 30px;
+      padding: 20px 10px;
     }
 
     &-logo {
@@ -103,8 +117,11 @@
     }
 
     &-contact {
+      width: 40px;
+      height: 40px;
+
       &-icon {
-        font-size: 25px;
+        font-size: 20px;
       }
     }
   }
@@ -120,6 +137,8 @@
     }
 
     &-logo {
+      margin-top: 0px;
+      margin-left: -30px;
       order: 2;
 
       .footer-logo-img {
@@ -127,7 +146,7 @@
       }
 
       .footer-logo-text {
-        margin-left: 5px;
+        margin-left: 27px;
         width: 175px;
         font-size: 14px;
         line-height: 17px;
@@ -153,11 +172,16 @@
 
     }
 
-    &-contact {
+    .contact {
       order: 3;
+    }
+
+    &-contact {
+      width: 30px;
+      height: 30px;
 
       &-icon {
-        font-size: 20px;
+        font-size: 15px;
       }
     }
 
