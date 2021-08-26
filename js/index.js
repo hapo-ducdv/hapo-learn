@@ -18,3 +18,15 @@
         }
     ]
 });
+
+$('.btn-close-msg').click(function() {
+    $('#messenger-show', this).removeClass('chatbox');
+});
+
+$('.btn-close-msg').click(function() {
+    $('#messenger-show').slideUp();
+});
+
+$('.logo-messenger').click(function() {
+    $('#messenger-show').slideDown('chatbox');
+});
