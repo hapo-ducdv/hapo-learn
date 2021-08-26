@@ -40,9 +40,13 @@
   }
 
   .multi-device-img {
-    width: 720px;
+    width: 780px;
     margin-left: -50px;
     margin-top: 55px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .mb-img {
