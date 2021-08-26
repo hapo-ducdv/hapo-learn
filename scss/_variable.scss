@@ -26,9 +26,17 @@ $cl-copyright: #454545;
 $cl-bg-google: #DC4E41;
 $cl-bg-fb: #3B5999;
 $cl-bg-lr-fc: #F2F2F2;
+$cl-slick: #969494;
+$cl-linear-gradient-f: #FFFBFB;
+$cl-linear-gradient-e: #E7E9EE;
 
 @font-face {
   src: url("../assets/fonts/utm_bryantlg.ttf");
   font-family: "UTM_BryantLG";
   font-size: 14px;
+}
+
+@font-face {
+  src: url("../assets/fonts/opensans-bold.ttf");
+  font-family: "Open Sans";
 }

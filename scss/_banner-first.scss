@@ -1,24 +1,26 @@
 .banner-first {
+  font-family: "UTM_BryantLG";
   height: 625px;
   background-image: url("../assets/images/hapo_learn_banner1.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 
   &-content {
-    margin-left: 36px;
+    margin-left: 75px;
 
     &-heading {
-      height: 55px;
-      font-size: 48px;
+      margin-top: 60px;
+      height: 61px;
+      font-size: 50px;
       line-height: 61px;
       letter-spacing: -0.05em;
       color: $color_banner1_heading;
     }
 
     &-bold {
-      height: 55px;
+      height: 61px;
       font-weight: bold;
-      font-size: 48px;
+      font-size: 50px;
       line-height: 61px;
       letter-spacing: -0.05em;
       color: $color_banner1_heading;
@@ -47,14 +49,25 @@
 
     .btn {
       width: 377px;
+      height: 70px;
       background: $color_hover;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: inset 0px 4px 4px $cl-boxshadow-black;
       border-radius: 35px;
       text-decoration: none;
-      color: white;
+      font-weight: bold;
+      color: $cl-while;
       font-size: 30px;
-      text-align: center;
     }
+  }
+}
+
+.linear-gradient {
+  height: 50px;
+  overflow: visible;
+
+  .transition-block {
+    height: 165px;
+    background: linear-gradient(180deg, $cl-linear-gradient-f 87.5%, $cl-linear-gradient-e 100%)
   }
 }
 
@@ -64,23 +77,19 @@
     height: 420px;
 
     &-content {
-      margin-left: 23px;
+      margin-left: 50px;
 
       &-heading {
-        height: 35px;
+        margin-top: -40px;
+        height: 37px;
         font-size: 30px;
         line-height: 37px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_heading;
       }
 
       &-bold {
-        height: 35px;
-        font-weight: bold;
+        height: 37px;
         font-size: 30px;
         line-height: 37px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_heading;
       }
 
       &-bold img {
@@ -92,58 +101,52 @@
         margin-top: 12px;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_desc;
       }
 
       &-desc-bot {
         margin-bottom: 29px;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_desc;
       }
 
       .btn {
         width: 200px;
-        background: $color_hover;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 35px;
-        text-decoration: none;
-        color: white;
+        height: 37px;
         font-size: 16px;
-        text-align: center;
       }
+    }
+  }
+
+  .linear-gradient {
+    height: 42px;
+
+    .transition-block {
+      height: 122px;
     }
   }
 }
 
 @media all and (max-width: 767px){
   .banner-first {
-    height: 220px;
+    height: 240px;
     width: 100%;
-    display: block !important;
+    display: block;
 
     &-content {
-      padding-top: 220px !important;
+      padding-top: 420px;
       margin-left: 60px;
 
       &-heading {
         margin-top: 6px;
-        height: 35px;
+        height: 31px;
         font-size: 25px;
         line-height: 31px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_heading;
       }
 
       &-bold {
-        height: 35px;
-        font-weight: bold;
+        height: 31px;
         font-size: 25px;
         line-height: 31px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_heading;
       }
 
       &-bold img {
@@ -152,31 +155,31 @@
       }
 
       &-desc-up {
-        margin-top: 14px;
+        margin-top: 16px;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_desc;
       }
 
       &-desc-bot {
-        margin-bottom: 19px;
+        margin-bottom: 21px;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: -0.05em;
-        color: $color_banner1_desc;
       }
 
       .btn {
         width: 250px;
-        background: $color_hover;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 35px;
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        text-align: center;
+        height: 45px;
+        font-size: 18px;
+        line-height: 22px;
       }
+    }
+  }
+
+  .linear-gradient {
+    height: 5px;
+
+    .transition-block {
+      height: 310px;
     }
   }
 }
