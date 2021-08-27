@@ -121,23 +121,23 @@
 }
 
 .banner-first-content {
-  margin-left: 75px;
+  margin-left: 59px;
 }
 
 .banner-first-content-heading {
-  margin-top: 60px;
-  height: 61px;
-  font-size: 50px;
-  line-height: 61px;
+  margin-top: 10px;
+  height: 58px;
+  font-size: 47px;
+  line-height: 58px;
   letter-spacing: -0.05em;
   color: #11114E;
 }
 
 .banner-first-content-bold {
-  height: 61px;
+  height: 58px;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 47px;
+  line-height: 58px;
   letter-spacing: -0.05em;
   color: #11114E;
 }
@@ -1250,6 +1250,8 @@
 
 .messenger .chatbox-message-logo img {
   width: 100%;
+  border: 1px solid #DADADA;
+  border-radius: 50%;
 }
 
 .messenger .chatbox-message-text {
