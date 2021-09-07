@@ -349,10 +349,10 @@
             <div class="modal-title" id="modalLoginRegisterLabel">
                 <ul class="nav nav-tabs w-100">
                     <li class="nav-item w-50">
-                        <a class="d-flex justify-content-center align-items-center nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                        <a class="text-uppercase d-flex justify-content-center align-items-center nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
                     </li>
                     <li class="nav-item w-50">
-                        <a class="d-flex justify-content-center align-items-center nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                        <a class="text-uppercase d-flex justify-content-center align-items-center nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
                     </li>
                 </ul>
                 <button type="button" class="tab-close rounded-circle" data-dismiss="modal">
@@ -373,13 +373,15 @@
                             </div>
                             <div class="form-group w-100 form-check d-flex align-items-center">
                                 <div class="w-50">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <p class="form-check-label" for="exampleCheck1">Check me out</p>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                        <label class="custom-control-label form-control-label" for="customControlInline">Remember me</label>
+                                    </div>
                                 </div>
                                 <a href="#" class="w-50 text-right forgot-pwd"><u>Forgot password</u></a>
                             </div>
-                            <div class="d-flex justify-content-center btn-cover">
-                                <button type="submit" class="btn text-uppercase">login</button>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn text-uppercase btn-cover btn-login">login</button>
                             </div>
                             <div class="d-flex align-items-center login-with">
                                 <div class="horizontal-line"><hr></div>
@@ -416,8 +418,8 @@
                                 <label class="form-label" for="rRepeatPwd">Repeat password:</label>
                                 <input type="password" class="form-control" id="rRepeatPwd">
                             </div>
-                            <div class="d-flex justify-content-center btn-cover btn-register">
-                                <button type="submit" class="btn text-uppercase">Register</button>
+                            <div class="d-flex justify-content-center btn-register">
+                                <button type="submit" class="btn text-uppercase btn-cover btn-register">Register</button>
                             </div>
                         </form>
                     </div>
