@@ -142,8 +142,8 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <a class="view-all" href="#">View All Our Courses
-            <img src="assets/images/icon-muiten.png" alt="View All Our Courses">
+        <a class="row view-all" href="#">View All Our Courses
+            <i class="fas fa-long-arrow-alt-right d-flex arrow-right"></i>
         </a>
     </div>
 </div>
@@ -189,6 +189,9 @@
             <div class="carousel-item active">
                 <div class="feedback-border">
                     <div class="feedback-border-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</div>
+                </div>
+                <div class="feedback-abc-border">
+                    <img src="assets/images/polygon.png" alt="">
                 </div>
                 <div class="feedback-info d-flex">
                     <img src="assets/images/avatar.png" class="rounded-circle feedback-info-img" alt="Avatar">
@@ -315,24 +318,20 @@
                     <a class="nav-link" href="#">FAQ</a>
                 </nav>
             </div>
-            <div class="col-md-4 col-5 d-flex align-items-center justify-content-center contact">
-                <a data-toggle="collapse" href="#collapseFacebook" role="button" aria-expanded="false" aria-controls="collapseFacebook" class="d-flex align-items-center justify-content-center footer-contact">
-                    <i class="fab fa-facebook-f footer-contact-icon"></i>
-                </a>
-                <div class="collapse" id="collapseFacebook">
-                    <div class="">facebook.com/tuyen.dung.haposoft</div>
-                </div>
-                <a data-toggle="collapse" href="#collapseCall" role="button" aria-expanded="false" aria-controls="collapseCall" class="d-flex align-items-center justify-content-center footer-contact">
-                    <i class="fas fa-phone-alt footer-contact-icon"></i>
-                </a>
-                <div class="collapse" id="collapseCall">
-                    <div class="">+84-85-645-9898</div>
-                </div>
-                <a data-toggle="collapse" href="#collapseMail" role="button" aria-expanded="false" aria-controls="collapseMail" class="d-flex align-items-center justify-content-center footer-contact">
-                    <i class="fas fa-envelope footer-contact-icon"></i>
-                </a>
-                <div class="collapse" id="collapseMail">
-                    <div class="">info@haposoft.com</div>
+            <div class="col-md-4 col-5 d-flex align-items-center justify-content-center contact footer-contact">
+                <div class="d-inline-flex footer-icon">
+                    <a href="#"  class="footer-icon-fb">
+                        <img src="./assets/images/fb.png" alt="icon-fb">
+                        <div class="txt-hidden-fb">facebook.com/tuyen.dung.haposoft</div>
+                    </a>
+                    <a href="#" class="footer-icon-phone">
+                        <img src="./assets/images/call.png" alt="icon-phone">
+                        <div class="txt-hidden-phone">+84-85-645-9898</div>
+                    </a>
+                    <a href="#" class="footer-icon-mail">
+                        <img src="./assets/images/mail.png" alt="icon-mail">
+                        <div class="txt-hidden-mail">info@haposoft.com</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -430,7 +429,9 @@
 
 <div class="messenger">
     <div id="messenger-show" class="chatbox">
-        <div class="d-flex align-items-center justify-content-center float-right btn-close-msg"><i class="fas fa-times"></i></div>
+        <div class="d-flex align-items-center justify-content-center float-right btn-close-msg">
+            <i class="fas fa-times"></i>
+        </div>
         <div class="chatbox-title">HapoLearn</div>
         <div class="row chatbox-message">
             <div class="chatbox-message-logo">

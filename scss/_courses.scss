@@ -72,6 +72,10 @@
       border-radius: 22px;
       border: 0.3px solid $cl-while;
     }
+
+    .btn:hover {
+      color: $color_banner1_heading;
+    }
   }
 
   .other_courses {
@@ -91,8 +95,18 @@
     font-size: 40px;
     line-height: 49px;
     letter-spacing: -0.02em;
+    text-decoration: none;
     margin-top: 35px;
     color: $color-view-all;
+
+    .arrow-right {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .view-all:hover {
+    color: $color_banner1_heading;
   }
 }
 

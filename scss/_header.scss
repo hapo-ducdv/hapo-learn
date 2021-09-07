@@ -1,8 +1,9 @@
 .header-menu {
-  height: 90px;
+  height: 150px;
   font-family: $open_sans;
 
   .navbar-brand {
+    margin-left: -70px;
     width: 340px;
 
     img {

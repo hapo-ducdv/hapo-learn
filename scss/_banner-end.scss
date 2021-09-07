@@ -28,6 +28,10 @@
     border: 0.3px solid $cl-while;
     padding: 15px 65px;
   }
+
+  .btn:hover {
+    color: $color_banner1_heading;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px){

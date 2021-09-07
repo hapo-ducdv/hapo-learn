@@ -29,6 +29,6 @@
   });
 
   $('.logo-messenger').click(function() {
-    $('#messenger-show').slideDown('chatbox');
+    $('#messenger-show').slideDown();
   });
 });

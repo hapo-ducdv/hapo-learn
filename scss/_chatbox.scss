@@ -4,6 +4,7 @@
   bottom: 92px;
 
   .chatbox {
+    display: none;
     width: 360px;
     height: 190px;
     background: $cl-while;
@@ -17,7 +18,12 @@
       margin-top: 13px;
       margin-right: 13px;
       background-color: $cl-feedback-slide;
+      cursor: pointer;
       border-radius: 50%;
+    }
+
+    .fa-times {
+      margin-top: -2px;
     }
 
     .chatbox-title {

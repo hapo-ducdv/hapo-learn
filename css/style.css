@@ -10,11 +10,12 @@
 }
 
 .header-menu {
-  height: 90px;
+  height: 150px;
   font-family: "Open Sans";
 }
 
 .header-menu .navbar-brand {
+  margin-left: -70px;
   width: 340px;
 }
 
@@ -173,6 +174,10 @@
   font-weight: bold;
   color: #FFFFFF;
   font-size: 30px;
+}
+
+.banner-first-content .btn:hover {
+  color: #11114E;
 }
 
 .linear-gradient {
@@ -357,6 +362,10 @@
   border: 0.3px solid #FFFFFF;
 }
 
+.courses .card-body .btn:hover {
+  color: #11114E;
+}
+
 .courses .other_courses {
   font-weight: bold;
   font-size: 80px;
@@ -374,8 +383,18 @@
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.02em;
+  text-decoration: none;
   margin-top: 35px;
   color: #90AB26;
+}
+
+.courses .view-all .arrow-right {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.courses .view-all:hover {
+  color: #11114E;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -641,13 +660,15 @@
 }
 
 .feedback-info-img {
-  width: 110px;
+  width: 70px;
+  height: 70px;
 }
 
 .feedback-info-title {
-  font-weight: bold;
+  margin-top: -17px;
   font-size: 20px;
   line-height: 25px;
+  font-weight: 900;
   color: #11114E;
 }
 
@@ -769,6 +790,10 @@
   border-radius: 35px;
   border: 0.3px solid #FFFFFF;
   padding: 15px 65px;
+}
+
+.banner-end .btn:hover {
+  color: #11114E;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -928,24 +953,52 @@
   margin-bottom: 20px;
 }
 
-.footer a {
-  text-decoration: none;
+.footer-nav .nav-link:hover {
+  color: #F2C54F;
 }
 
-.footer-contact {
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 45px;
-  height: 45px;
-  background: #FFFFFF;
-  border: 0.5px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 50%;
+.footer .txt-hidden-fb,
+.footer .txt-hidden-phone,
+.footer .txt-hidden-mail {
+  color: #FFFFFF;
+  display: none;
+  margin-left: 17px;
+  margin-right: 17px;
+  text-decoration-line: underline;
 }
 
-.footer-contact-icon {
-  color: #505353;
-  font-size: 25px;
+.footer .footer-icon-fb img {
+  width: 50px;
+}
+
+.footer .footer-icon-phone {
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.footer .footer-icon-phone img {
+  width: 50px;
+}
+
+.footer .footer-icon-mail img {
+  width: 50px;
+}
+
+.footer .footer-icon-fb:hover .txt-hidden-fb {
+  margin-right: 0;
+  display: inline-block;
+}
+
+.footer .footer-icon-phone:hover {
+  margin-right: 0;
+}
+
+.footer .footer-icon-phone:hover .txt-hidden-phone {
+  display: inline-block;
+}
+
+.footer .footer-icon-mail:hover .txt-hidden-mail {
+  display: inline-block;
 }
 
 .footer .copyright {
@@ -1087,6 +1140,8 @@
 
 .login-register .tab-content {
   margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .login-register .tab-content .form-label {
@@ -1139,7 +1194,7 @@
 }
 
 .login-register .login-with .horizontal-line {
-  width: 180px;
+  width: 150px;
 }
 
 .login-register .login-with .text {
@@ -1210,6 +1265,7 @@
 }
 
 .messenger .chatbox {
+  display: none;
   width: 360px;
   height: 190px;
   background: #FFFFFF;
@@ -1224,7 +1280,12 @@
   margin-top: 13px;
   margin-right: 13px;
   background-color: #C4C4C4;
+  cursor: pointer;
   border-radius: 50%;
+}
+
+.messenger .chatbox .fa-times {
+  margin-top: -2px;
 }
 
 .messenger .chatbox .chatbox-title {
