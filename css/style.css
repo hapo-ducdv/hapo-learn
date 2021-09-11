@@ -29,6 +29,7 @@
 
 .header-menu .navbar-toggler {
   border: none;
+  margin-left: -21px;
 }
 
 .header-menu .navbar-toggler .fas {

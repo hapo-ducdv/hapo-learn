@@ -4,12 +4,12 @@
   $('.navbar-toggler').click(function() {
     if (n == 0) {
       $('.fa-bars').removeClass('fa-bars').addClass('fa-times');
-      $('.messenger').hide();
+      $('.cih').hide();
       n = 1;
     }
     else {
       $('.fa-times').removeClass('fa-times').addClass('fa-bars');
-      $('.messenger').show();
+      $('.cih').show();
       n = 0;
     }
   });
