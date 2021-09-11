@@ -1,4 +1,19 @@
 ﻿$(document).ready(function () {
+  var n = 0;
+
+  $('.navbar-toggler').click(function() {
+    if (n == 0) {
+      $('.fa-bars').removeClass('fa-bars').addClass('fa-times');
+      $('.messenger').hide();
+      n = 1;
+    }
+    else {
+      $('.fa-times').removeClass('fa-times').addClass('fa-bars');
+      $('.messenger').show();
+      n = 0;
+    }
+  });
+
   $('.feedback-slide').slick({
     dots: true,
     infinite: false,
