@@ -1,15 +1,16 @@
 .footer {
   font-family: "UTM_BryantLG";
-  margin-top: 50px;
+  margin-top: 120px;
   color: $cl-while;
   background: $text_navbar_color;
 
   &-on {
-    padding: 35px 15px;
+    padding: 65px 0;
   }
 
   &-logo {
-    margin-top: -106px;
+    margin-top: -150px;
+    margin-left: 25px;
 
     .footer-logo-img {
       width: 290px;
@@ -30,11 +31,11 @@
 
   &-nav {
     &-left {
-      margin-left: 50px;
+      margin-left: 40px;
     }
 
     &-right {
-      margin-left: 80px;
+      margin-left: 90px;
     }
 
     .nav-link {
@@ -46,33 +47,65 @@
       margin-bottom: 20px;
     }
 
-  }
+    .nav-link:hover {
+      color: $cl-feedback-icon;
+    }
 
-  a {
-    text-decoration: none;
   }
 
   &-contact {
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 45px;
-    height: 45px;
-    background: $cl-while;
-    border: 0.5px solid $cl-while;
-    box-sizing: border-box;
-    border-radius: 50%;
+    margin-left: -60px;
+  }
 
-    &-icon {
-      color: $text_navbar_color;
-      font-size: 25px;
+  .a-link {
+    text-decoration: none;
+  }
+
+  .txt-hidden-fb,
+  .txt-hidden-phone,
+  .txt-hidden-mail {
+    color: $cl-while;
+    display: none;
+    margin-left: 17px;
+    margin-right: 17px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.05em;
+    text-decoration-line: underline;
+  }
+
+  .footer-icon-fb {
+    margin-right: 35px;
+  }
+
+  .footer-icon-phone {
+    margin-right: 35px;
+  }
+
+  .footer-icon-fb:hover {
+    margin-right: 0;
+
+    .txt-hidden-fb {
+      display: inline-block;
+    }
+  }
+
+  .footer-icon-phone:hover {
+    margin-right: 0;
+
+    .txt-hidden-phone {
+      display: inline-block;
+    }
+  }
+
+  .footer-icon-mail:hover {
+    .txt-hidden-mail {
+      display: inline-block;
     }
   }
 
   .copyright {
-    margin-left: 0;
-    padding: 0;
-    width: 100%;
-    height: 35px;
+    height: 38px;
     font-size: 15px;
     line-height: 18px;
     background: $cl-copyright;
@@ -81,11 +114,16 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px){
   .footer {
+    margin-top: 60px;
+
     &-on {
-      padding: 20px 10px;
+      padding: 32px 0;
     }
 
     &-logo {
+      margin-top: -170px;
+      margin-left: -35px;
+
       .footer-logo-img {
         width: 170px;
       }
@@ -101,11 +139,11 @@
 
     &-nav {
       &-left {
-        margin-left: 40px;
+        margin-left: 0;
       }
 
       &-right {
-        margin-left: 53px;
+        margin-left: 55px;
       }
 
       .nav-link {
@@ -113,15 +151,57 @@
         line-height: 22px;
         margin-bottom: 26px;
       }
-
     }
 
     &-contact {
-      width: 40px;
-      height: 40px;
+      margin-left: 30px;
+    }
 
-      &-icon {
-        font-size: 20px;
+    .footer-icon-fb:hover {
+      margin-right: 30px;
+
+      .txt-hidden-fb {
+        display: none;
+      }
+    }
+
+    .footer-icon-phone:hover {
+      margin-right: 30px;
+
+      .txt-hidden-phone {
+        display: none;
+      }
+    }
+
+    .footer-icon-mail:hover {
+      .txt-hidden-mail {
+        display: none;
+      }
+    }
+
+    .footer-icon-fb {
+      width: 40px;
+      margin-right: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer-icon-phone {
+      width: 40px;
+      margin-right: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer-icon-mail {
+      width: 40px;
+
+      img {
+        width: 100%;
       }
     }
   }
@@ -129,16 +209,14 @@
 
 @media all and (max-width: 767px){
   .footer {
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 50px;
 
     &-on {
-      padding: 15px 30px;
+      padding: 25px 25px;
     }
 
     &-logo {
-      margin-top: 0px;
-      margin-left: -30px;
+      margin-top: 15px;
       order: 2;
 
       .footer-logo-img {
@@ -146,7 +224,8 @@
       }
 
       .footer-logo-text {
-        margin-left: 27px;
+        margin-top: 8px;
+        margin-left: 32px;
         width: 175px;
         font-size: 14px;
         line-height: 17px;
@@ -157,11 +236,11 @@
       order: 1;
 
       &-left {
-        margin-left: 20px;
+        margin-left: 0;
       }
 
       &-right {
-        margin-left: 125px;
+        margin-left: 105px;
       }
 
       .nav-link {
@@ -169,23 +248,64 @@
         line-height: 21px;
         margin-bottom: 27px;
       }
-
     }
 
-    .contact {
-      order: 3;
-    }
+    .footer-icon-fb:hover {
+      margin-right: 11px;
 
-    &-contact {
-      width: 30px;
-      height: 30px;
-
-      &-icon {
-        font-size: 15px;
+      .txt-hidden-fb {
+        display: none;
       }
     }
 
+    .footer-icon-phone:hover {
+      margin-right: 11px;
+
+      .txt-hidden-phone {
+        display: none;
+      }
+    }
+
+    .footer-icon-mail:hover {
+      .txt-hidden-mail {
+        display: none;
+      }
+    }
+
+    .footer-icon-fb {
+      width: 30px;
+      margin-right: 11px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer-icon-phone {
+      width: 30px;
+      margin-right: 11px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer-icon-mail {
+      width: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-contact {
+      order: 3;
+      margin-left: 90px;
+      margin-top: -40px;
+    }
+
     .copyright {
+      width: 100%;
       order: 4;
     }
   }

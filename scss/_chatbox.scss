@@ -4,6 +4,7 @@
   bottom: 92px;
 
   .chatbox {
+    display: none;
     width: 360px;
     height: 190px;
     background: $cl-while;
@@ -17,7 +18,12 @@
       margin-top: 13px;
       margin-right: 13px;
       background-color: $cl-feedback-slide;
+      cursor: pointer;
       border-radius: 50%;
+    }
+
+    .fa-times {
+      margin-top: -2px;
     }
 
     .chatbox-title {
@@ -43,6 +49,8 @@
 
     img {
       width: 100%;
+      border: 1px solid $cl-bd-lg;
+      border-radius: 50%;
     }
   }
 
@@ -97,5 +105,23 @@
     width: 80px;
     height: 80px;
     cursor: pointer;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+  .messenger {
+    .logo-messenger {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+@media all and (max-width: 767px){
+  .messenger {
+    .logo-messenger {
+      width: 60px;
+      height: 60px;
+    }
   }
 }

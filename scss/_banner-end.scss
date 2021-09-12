@@ -1,8 +1,9 @@
 .banner-end {
   font-family: "UTM_BryantLG";
-  margin-top: 55px;
+  margin-top: 90px;
   height: 500px;
   background-image: url("../assets/images/banner2.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -28,11 +29,15 @@
     border: 0.3px solid $cl-while;
     padding: 15px 65px;
   }
+
+  .btn:hover {
+    color: $color_banner1_heading;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px){
   .banner-end {
-    margin-top: 50px;
+    margin-top: 60px;
     height: 267px;
 
     &-text {
@@ -52,7 +57,7 @@
 
 @media all and (max-width: 767px){
   .banner-end {
-    margin-top: 45px;
+    margin-top: 0;
     height: 182px;
 
     &-text {

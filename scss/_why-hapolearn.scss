@@ -1,6 +1,6 @@
 .why-hapolearn {
   font-family: "UTM_BryantLG";
-  margin-top: 55px;
+  margin-top: 116px;
   height: 740px;
   background-image: url("../assets/images/bg-black.jpg");
   background-repeat: no-repeat;
@@ -9,6 +9,7 @@
 
   &-text {
     margin-top: 300px;
+    margin-left: 20px;
     color: $cl-while;
     text-align: center;
 
@@ -43,6 +44,10 @@
     width: 780px;
     margin-left: -50px;
     margin-top: 55px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .mb-img {
@@ -65,14 +70,15 @@
         line-height: 61px;
         margin-left: 100px;
         margin-top: -320px;
-        margin-bottom: 55px;
+        margin-bottom: 65px;
       }
 
       .text-content {
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 7px;
-        margin-top: 8px;
+        margin-left: -25px;
+        margin-top: 10px;
       }
     }
 
@@ -87,8 +93,7 @@
 
       img {
         width: 100%;
-        margin-left: 20px;
-        margin-top: 55px;
+        margin-top: 35px;
       }
     }
 
@@ -105,8 +110,8 @@
 
 @media all and (max-width: 767px){
   .why-hapolearn {
-    margin-top: 80px;
-    height: 550px;
+    margin-top: 90px;
+    height: 570px;
 
     &-text {
       .why-hapolearn-title {
@@ -114,12 +119,13 @@
         width: 228px;
         font-size: 40px;
         line-height: 40px;
-        margin-left: 170px;
+        margin-left: 130px;
         margin-top: -250px;
         margin-bottom: 20px;
       }
 
       .text-content {
+        text-align: center;
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 6px;
@@ -131,6 +137,7 @@
       font-size: 16px;
       line-height: 18px;
       letter-spacing: -0.02em;
+      margin-right: 9px;
     }
 
     .multi-device-img {

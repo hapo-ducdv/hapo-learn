@@ -6,22 +6,22 @@
   background-repeat: no-repeat;
 
   &-content {
-    margin-left: 75px;
+    margin-left: 59px;
 
     &-heading {
-      margin-top: 60px;
-      height: 61px;
-      font-size: 50px;
-      line-height: 61px;
+      margin-top: 10px;
+      height: 58px;
+      font-size: 47px;
+      line-height: 58px;
       letter-spacing: -0.05em;
       color: $color_banner1_heading;
     }
 
     &-bold {
-      height: 61px;
+      height: 58px;
       font-weight: bold;
-      font-size: 50px;
-      line-height: 61px;
+      font-size: 47px;
+      line-height: 58px;
       letter-spacing: -0.05em;
       color: $color_banner1_heading;
     }
@@ -57,6 +57,10 @@
       font-weight: bold;
       color: $cl-while;
       font-size: 30px;
+    }
+
+    .btn:hover {
+      color: $color_banner1_heading;
     }
   }
 }
@@ -128,16 +132,15 @@
 
 @media all and (max-width: 767px){
   .banner-first {
-    height: 240px;
+    height: 215px;
     width: 100%;
     display: block;
 
     &-content {
-      padding-top: 420px;
-      margin-left: 60px;
+      padding-top: 380px;
+      margin: 0 auto;
 
       &-heading {
-        margin-top: 6px;
         height: 31px;
         font-size: 25px;
         line-height: 31px;

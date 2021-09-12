@@ -1,4 +1,19 @@
 ﻿$(document).ready(function () {
+  var n = 0;
+
+  $('.navbar-toggler').click(function() {
+    if (n == 0) {
+      $('.fa-bars').removeClass('fa-bars').addClass('fa-times');
+      $('.cih').hide();
+      n = 1;
+    }
+    else {
+      $('.fa-times').removeClass('fa-times').addClass('fa-bars');
+      $('.cih').show();
+      n = 0;
+    }
+  });
+
   $('.feedback-slide').slick({
     dots: true,
     infinite: false,
@@ -29,6 +44,6 @@
   });
 
   $('.logo-messenger').click(function() {
-    $('#messenger-show').slideDown('chatbox');
+    $('#messenger-show').slideDown();
   });
 });
