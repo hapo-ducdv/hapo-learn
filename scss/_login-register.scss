@@ -2,6 +2,11 @@
   font-family: "UTM_BryantLG";
   color: $text_navbar_color;
 
+  .fix-width {
+    width: 430px;
+    margin: auto;
+  }
+
   .modal-title {
     border: 1px solid $color_card-title;
 
@@ -103,8 +108,12 @@
   .login-with {
     margin-top: 15px;
 
+    .text {
+      margin: 0 4px;
+    }
+
     .horizontal-line {
-      width: 150px;
+      width: 110px;
     }
 
     .text {
@@ -141,7 +150,7 @@
 
   .login-account {
     .btn {
-      width: 370px;
+      width: 100%;
       height: 55px;
       color: $cl-while;
       font-size: 20px;
@@ -170,14 +179,36 @@
 }
 
 @media all and (max-width: 767px){
-  .modal-content-cus {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
+  .login-register {
+    .modal-content-cus {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20px;
 
-    .login-with {
-      .horizontal-line {
-        width: 135px;
+      .login-with {
+        .horizontal-line {
+          width: 85px;
+        }
+      }
+    }
+
+    .tab-content {
+      .custom-control-input {
+        margin-top: 2px;
+        width: 17px;
+        height: 17px;
+      }
+
+      .custom-control-label {
+        margin-left: 5px;
+        font-size: 17px;
+        line-height: 21px;
+      }
+
+      .forgot-pwd {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
       }
     }
   }

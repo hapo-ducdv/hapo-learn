@@ -259,12 +259,12 @@
 
 @media all and (max-width: 767px) {
   .banner-first {
-    height: 240px;
+    height: 215px;
     width: 100%;
     display: block;
   }
   .banner-first-content {
-    padding-top: 400px;
+    padding-top: 380px;
     margin: 0 auto;
   }
   .banner-first-content-heading {
@@ -614,11 +614,11 @@
     margin-bottom: 20px;
   }
   .why-hapolearn-text .text-content {
+    text-align: center;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 6px;
     margin-top: 10px;
-    margin-left: -60px;
   }
   .why-hapolearn .fa-check-circle {
     font-size: 16px;
@@ -814,6 +814,9 @@
   }
   .feedback .slide {
     margin-top: 8px;
+  }
+  .feedback .slide-arrow {
+    top: 82px;
   }
   .feedback .fa-chevron-circle-left {
     font-size: 25px;
@@ -1184,15 +1187,12 @@
 @media all and (max-width: 767px) {
   .footer {
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
   }
   .footer-on {
     padding: 25px 25px;
   }
   .footer-logo {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 15px;
     order: 2;
   }
   .footer-logo .footer-logo-img {
@@ -1212,7 +1212,7 @@
     margin-left: 0;
   }
   .footer-nav-right {
-    margin-left: 125px;
+    margin-left: 105px;
   }
   .footer-nav .nav-link {
     font-size: 17px;
@@ -1256,8 +1256,8 @@
   }
   .footer-contact {
     order: 3;
-    margin-left: 100px;
-    margin-top: -30px;
+    margin-left: 90px;
+    margin-top: -40px;
   }
   .footer .copyright {
     width: 100%;
@@ -1268,6 +1268,11 @@
 .login-register {
   font-family: "UTM_BryantLG";
   color: #505353;
+}
+
+.login-register .fix-width {
+  width: 430px;
+  margin: auto;
 }
 
 .login-register .modal-title {
@@ -1372,8 +1377,12 @@
   margin-top: 15px;
 }
 
+.login-register .login-with .text {
+  margin: 0 4px;
+}
+
 .login-register .login-with .horizontal-line {
-  width: 150px;
+  width: 110px;
 }
 
 .login-register .login-with .text {
@@ -1408,7 +1417,7 @@
 }
 
 .login-register .login-account .btn {
-  width: 370px;
+  width: 100%;
   height: 55px;
   color: #FFFFFF;
   font-size: 20px;
@@ -1435,13 +1444,28 @@
 }
 
 @media all and (max-width: 767px) {
-  .modal-content-cus {
+  .login-register .modal-content-cus {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
   }
-  .modal-content-cus .login-with .horizontal-line {
-    width: 135px;
+  .login-register .modal-content-cus .login-with .horizontal-line {
+    width: 85px;
+  }
+  .login-register .tab-content .custom-control-input {
+    margin-top: 2px;
+    width: 17px;
+    height: 17px;
+  }
+  .login-register .tab-content .custom-control-label {
+    margin-left: 5px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .login-register .tab-content .forgot-pwd {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
   }
 }
 
